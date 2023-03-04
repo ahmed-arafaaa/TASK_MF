@@ -1,0 +1,164 @@
+﻿@model IEnumerable<MINAPharm_task1.Models.Data.Assets>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>MINAPHARM_ASSETS</h1>
+
+@*<p>
+        <a asp-action="create">Create</a>
+    </p>
+    <p>
+        <a asp-action="search">search</a>
+    </p>*@
+
+
+    <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.assitId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.assetname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.owner)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.processor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.installesmomory)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.manufacturer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.model)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.version)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.drivername)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.year)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+
+                        @Html.DisplayFor(modelItem => item.assitId)
+                    </td>
+                    <td>
+                        @if (item.assetname == null)
+                        {
+                            <p>---</p>
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.assetname)
+                        }
+                    </td>
+                    <td>
+                        @if (item.owner == null)
+                        {
+                            <p>---</p>
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.owner)
+
+                        }
+                    </td>
+                    <td>
+
+                        @if (item.processor == null)
+                        {
+                            <p>---</p>
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.processor)
+                        }
+
+                    </td>
+                    <td>
+                        @if (item.installesmomory == null)
+                        {
+                            <p>---</p>
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.installesmomory)
+                        }
+
+                    </td>
+                    <td>
+                        @if (item.manufacturer == null)
+                        {
+                    <p>---</p>
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.manufacturer)
+                        }
+                    </td>
+
+                    <td>
+                        @if (item.model == null)
+                {
+                    <p>---</p>
+                }
+                else { 
+
+                            @Html.DisplayFor(modelItem => item.model)
+                        }
+                    </td>
+                    <td>
+                        @if (item.version == null)
+                        {
+                            <p>---</p>
+                        }
+                        else
+                        {
+                        @Html.DisplayFor(modelItem => item.version)
+                        }
+                    </td>
+                    <td>
+                        @if (item.drivername == null)
+                        {
+                            <p>---</p>
+                        }
+                        else
+                        {
+                        @Html.DisplayFor(modelItem => item.drivername)
+                        }
+                    </td>
+                    <td>
+                        @if (item.year == null)
+                        {
+                            <p>---</p>
+                        }
+                        else
+                        {
+                        @Html.DisplayFor(modelItem => item.year)
+                        }
+                    </td>
+                    <td>
+                        @Html.ActionLink("Update", "Edit", new {id=item.assitId }) 
+                       |
+                        @Html.ActionLink("Delete", "delete", new { id=item.assitId})
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

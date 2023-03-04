@@ -1,0 +1,74 @@
+﻿ @model MINAPharm_task1.Models.Data.Assets
+
+@{
+    ViewData["Title"] = "create";
+}
+
+<h1>NEW</h1>
+
+<h4>Asset</h4>
+<hr />
+<div class="row" >
+    <div class="col-md-4">
+        <form asp-action="create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+            <div class="form-group">
+                <label asp-for="assetname" class="control-label"></label>
+                <input asp-for="assetname" class="form-control" />
+                <span asp-validation-for="assetname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="owner" class="control-label"></label>
+                <input asp-for="owner" class="form-control" />
+                <span asp-validation-for="owner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="processor" class="control-label"></label>
+                <input asp-for="processor" class="form-control" />
+                <span asp-validation-for="processor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="installesmomory" class="control-label"></label>
+                <input asp-for="installesmomory" class="form-control" />
+                <span asp-validation-for="installesmomory" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="manufacturer" class="control-label"></label>
+                <input asp-for="manufacturer" class="form-control" />
+                <span asp-validation-for="manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="model" class="control-label"></label>
+                <input asp-for="model" class="form-control" />
+                <span asp-validation-for="model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="version" class="control-label"></label>
+                <input asp-for="version" class="form-control" />
+                <span asp-validation-for="version" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="drivername" class="control-label"></label>
+                <input asp-for="drivername" class="form-control" />
+                <span asp-validation-for="drivername" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="year" class="control-label"></label>
+                <input asp-for="year" class="form-control" />
+                <span asp-validation-for="year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="add" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
