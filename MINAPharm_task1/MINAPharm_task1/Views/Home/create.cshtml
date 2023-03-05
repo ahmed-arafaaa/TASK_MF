@@ -1,7 +1,7 @@
 ﻿ @model MINAPharm_task1.Models.Data.Assets
 
 @{
-    ViewData["Title"] = "create";
+    ViewData["Title"] = Model == null ? "create" : "Edit";
 }
 
 <h1>NEW</h1>
@@ -10,9 +10,14 @@
 <hr />
 <div class="row" >
     <div class="col-md-4">
-        <form asp-action="create">
+        <form asp-action="@ViewData["Title"]">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           
+            <div class="form-group">
+                <label asp-for="assitId" class="control-label"></label>
+                <input asp-for="assitId" class="form-control" readonly />
+                <span asp-validation-for="assitId" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <label asp-for="assetname" class="control-label"></label>
                 <input asp-for="assetname" class="form-control" />

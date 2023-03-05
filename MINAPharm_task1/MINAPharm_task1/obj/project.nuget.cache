@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hJPD36aIUrOTS+2AdaNbFGDDgphuwF2CHMr32YjTNNvFvIo+aKtUIVJTgwGKGe9/gy6HWrQ5fTpHafbWn5fVqg==",
+  "dgSpecHash": "zWPU6f2tI/4VZf5ZZqAfH9WdggDGHCao/YCHLycCwcLclG17Ap6/TgYfo7oJTGkAua5Tt30Zdv5dxAQwjWc6LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed\\source\\repos\\MINAPharm_task1\\MINAPharm_task1\\MINAPharm_task1.csproj",
+  "projectFilePath": "C:\\Users\\ahmed\\Desktop\\TASK_MF\\MINAPharm_task1\\MINAPharm_task1\\MINAPharm_task1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

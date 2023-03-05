@@ -53,7 +53,7 @@ namespace MINAPharm_task1.Models.Reprosatory
         public void update(Assets assett)
         {
 
-            db.Entry(assett).State = EntityState.Modified;
+            db.assett.Update(assett);
             db.SaveChanges();
 
         }

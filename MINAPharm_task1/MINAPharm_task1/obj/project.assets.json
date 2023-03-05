@@ -8607,11 +8607,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\MINAPharm_task1\\MINAPharm_task1\\MINAPharm_task1.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\Desktop\\TASK_MF\\MINAPharm_task1\\MINAPharm_task1\\MINAPharm_task1.csproj",
       "projectName": "MINAPharm_task1",
-      "projectPath": "C:\\Users\\ahmed\\source\\repos\\MINAPharm_task1\\MINAPharm_task1\\MINAPharm_task1.csproj",
+      "projectPath": "C:\\Users\\ahmed\\Desktop\\TASK_MF\\MINAPharm_task1\\MINAPharm_task1\\MINAPharm_task1.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmed\\source\\repos\\MINAPharm_task1\\MINAPharm_task1\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\Desktop\\TASK_MF\\MINAPharm_task1\\MINAPharm_task1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
